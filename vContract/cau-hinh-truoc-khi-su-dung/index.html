@@ -8,7 +8,7 @@
     <title>Cấu hình trước khi sử dụng - Hướng dẫn sử dụng hệ thống vContract</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
         <link href="../../css/extra.css" rel="stylesheet" />
     
       <script>
@@ -18,11 +18,12 @@
         var mkdocs_page_url = null;
       </script>
     
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
     <!--[if lt IE 9]>
       <script src="../../js/html5shiv.min.js"></script>
     <![endif]-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-      <script>hljs.highlightAll();</script> 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
 </head>
 
 <body class="wy-body-for-nav" role="document">
@@ -34,7 +35,7 @@
           <a href="../.." class="icon icon-home"> Hướng dẫn sử dụng hệ thống vContract
         </a><div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
   </form>
 </div>
       </div>
@@ -102,9 +103,9 @@
       <div class="wy-nav-content">
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
           <li>vContract - Hợp đồng điện tử &raquo;</li>
-      <li class="breadcrumb-item active">Cấu hình trước khi sử dụng</li>
+      <li>Cấu hình trước khi sử dụng</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -118,7 +119,7 @@
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/hzohbt0v3FI?si=UN9So5585lChyQF4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <ul>
-<li><strong>Loại hợp đồng</strong>: dùng để phân nhóm các hợp đồng của đơn vi, hỗ trợ cho tìm kiếm và cấu hình các chức năng khách trong hợp đồng</li>
+<li><strong>Loại hợp đồng</strong>: dùng để phân nhóm các hợp đồng của đơn vị, hỗ trợ cho tìm kiếm và cấu hình các chức năng khác trong hệ thống.</li>
 <li><strong>Hệ thống quy định</strong>: mỗi đơn vị sử dụng dịch vụ có ít nhất 1 loại hợp đồng, các chủ thể là khách hàng cuối chỉ thực hiện ký hợp đồng không thực hiện các chức năng này.</li>
 <li>
 <p>Các bước thiết lập loại hợp đồng:</p>
@@ -166,14 +167,14 @@
 <ul>
 <li><strong>Phương thức ký</strong>: là hình thức ký số mà đơn vị sử dụng để ký hợp đồng.</li>
 <li><strong>Hệ thống quy định</strong>:</li>
-<li>Đơn vị tham gia ký kết là doanh nghiệp/tổ chức &gt;&gt; bắt buộc ký bằng CA (USB Token, Sim CA, Clound CA).</li>
-<li>Đơn vị tham gia ký kết là cá nhân &gt;&gt; có thể ký bằng CA (USB Token, Sim CA, Clound CA) hoặc OTP.</li>
+<li>Đơn vị tham gia ký kết là doanh nghiệp/tổ chức &gt;&gt; bắt buộc ký bằng CA (USB Token, Sim CA, Cloud CA).</li>
+<li>Đơn vị tham gia ký kết là cá nhân &gt;&gt; có thể ký bằng CA (USB Token, Sim CA, Cloud CA) hoặc OTP.</li>
 <li>Các bước thiết lập phương thức ký:<ul>
 <li><strong>Bước 1</strong>: Chọn menu chính "Cấu hình chung" (menu trái)</li>
 <li><strong>Bước 2</strong>: Chọn menu chức năng "Phương thức ký"</li>
 <li><strong>Bước 3</strong>: Click nút "Thêm mới"</li>
 <li><strong>Bước 4</strong>: Điền thông tin 1 hình thức ký &gt;&gt; Click "Lưu"
-  Ngoài ra, người dùng có thể thiết lập nhanh Phương thức ký trên trực tiếp trang ký 1 hợp đồng (tương đương bước 4)
+  <br>Ngoài ra, người dùng có thể thiết lập nhanh Phương thức ký trên trực tiếp trang ký 1 hợp đồng (tương đương bước 4)
   <img alt="" src="../picture/thiet-lap-phuong-thuc-ky-b4.png" /></li>
 </ul>
 </li>
@@ -186,22 +187,20 @@
   <img alt="" src="../picture/dang-ky-phuong-thuc-usb-token-b1.png" /></li>
 <li><strong>Bước 2</strong> : Click "Tải lên từ USB-token" &gt;&gt; Chọn chức thư số cần thêm mới.
   <img alt="" src="../picture/dang-ky-phuong-thuc-usb-token-b2.png" /></li>
-<li><strong>Bước 3</strong> :Hiển thị thông tin Chứng thư số đã chọn &gt;&gt; Đọc thông tin điều khoản sử dụng và tích vào checkbox "tô đã đọc..." &gt;&gt; nhấn "Lưu"</li>
+<li><strong>Bước 3</strong> :Hiển thị thông tin Chứng thư số đã chọn &gt;&gt; Đọc thông tin điều khoản sử dụng và tích vào checkbox "tô đã đọc..." &gt;&gt; nhấn "Lưu"
+<br><strong>-&gt;</strong> Sau khi thêm thành công, chứng thư số sẽ được thêm vào phần danh sách phương thức ký.</li>
 </ul>
-<p><strong>-&gt;</strong> Sau khi thêm thành công, chứng thư số sẽ được thêm vào phần danh sách phương thức ký.</p>
 <h4 id="ang-ky-phuong-thuc-ky-sim-ca"><strong>Đăng ký phương thức ký SIM CA</strong></h4>
 <p><strong>Yêu cầu:</strong> Sim của người dùng là simCA, có chứng thư số hợp lệ - còn hạn trong đó.</p>
 <p><strong>Các bước thực hiện:</strong></p>
 <ul>
-<li><strong>Bước 1</strong> : Tại cột <strong>Loại phương thức ký</strong> chọn <strong>SIM CA</strong>.</li>
-</ul>
-<p><img alt="" src="../picture/dang-ky-phuong-thuc-sim-ca-b1.png" /></p>
-<ul>
+<li><strong>Bước 1</strong> : Tại cột <strong>Loại phương thức ký</strong> chọn <strong>SIM CA</strong>.
+  <img alt="" src="../picture/dang-ky-phuong-thuc-sim-ca-b1.png" /></li>
 <li><strong>Bước 2</strong> : Tại cột <strong>Số điện thoại</strong>: Nhập số điện thoại chứa chứng thư số cần đăng ký.</li>
 <li><strong>Bước 3</strong> : Nhấn "Lấy danh sách CTS" &gt;&gt; tích chọn Chứng thư số cần đăng ký trong danh sách.</li>
-<li><strong>Bước 4</strong> : Đọc thồn tin điều khoản sử dụng và tích chọn "Tôi đã đọc..." &gt;&gt; nhấn "Lưu" để thêm mới.</li>
+<li><strong>Bước 4</strong> : Đọc thông tin điều khoản sử dụng và tích chọn "Tôi đã đọc..." &gt;&gt; nhấn "Lưu" để thêm mới.
+<br><strong>-&gt;</strong> Sau khi thêm thành công, chứng thư số sẽ được thêm vào phần danh sách phương thức ký.</li>
 </ul>
-<p><strong>-&gt;</strong> Sau khi thêm thành công, chứng thư số sẽ được thêm vào phần danh sách phương thức ký.</p>
 <h4 id="ang-ky-phuong-thuc-ky-cloudca"><strong>Đăng ký phương thức ký CloudCA</strong></h4>
 <p><strong>Yêu cầu:</strong> Tài khoản của người dùng là Chứng thư số mysign, có chứng thư số hợp lệ - còn hạn trong đó.</p>
 <p><strong>Các bước thực hiện:</strong></p>
@@ -222,48 +221,48 @@
 <li>
 <p><strong>Thông tin khách hàng:</strong></p>
 <ul>
-<li>Loại khách hàng: bắt buộc.</li>
-<li>Tên khách hàng: bắt buộc.</li>
-<li>Ngày sinh (Đối với loại khách hàng là cá nhân): không bắt buộc.</li>
-<li>Giới tính (Đối với loại khách hàng là cá nhân): không bắt buộc.</li>
-<li>Loại giấy tờ: bắt buộc.</li>
-<li>Số giấy tờ: bắt buộc.</li>
-<li>Ngày cấp: bắt buộc.</li>
-<li>Nơi cấp: bắt buộc.</li>
-<li>Mã số thuế: không bắt buộc.</li>
+<li>Loại khách hàng: bắt buộc</li>
+<li>Tên khách hàng: bắt buộc</li>
+<li>Ngày sinh (Đối với loại khách hàng là cá nhân): không bắt buộc</li>
+<li>Giới tính (Đối với loại khách hàng là cá nhân): không bắt buộc</li>
+<li>Loại giấy tờ: bắt buộc</li>
+<li>Số giấy tờ: bắt buộc</li>
+<li>Ngày cấp: bắt buộc</li>
+<li>Nơi cấp: bắt buộc</li>
+<li>Mã số thuế: không bắt buộc</li>
 </ul>
 </li>
 <li><strong>Thông tin liên hệ:</strong><ul>
-<li>Tỉnh/Thành phố: bắt buộc.</li>
-<li>Quận/Huyện: bắt buộc.</li>
-<li>Phường/Xã: không bắt buộc.</li>
-<li>Địa chỉ: bắt buộc.</li>
-<li>Email: bắt buộc.</li>
-<li>Điện thoại: bắt buộc.</li>
-<li>Fax: không bắt buộc.</li>
+<li>Tỉnh/Thành phố: bắt buộc</li>
+<li>Quận/Huyện: bắt buộc</li>
+<li>Phường/Xã: không bắt buộc</li>
+<li>Địa chỉ: bắt buộc</li>
+<li>Email: bắt buộc</li>
+<li>Điện thoại: bắt buộc</li>
+<li>Fax: không bắt buộc</li>
 </ul>
 </li>
 <li><strong>Thông tin người đại diện (Đối với loại khách hàng là tổ chức):</strong><ul>
-<li>Họ và tên: bắt buộc.</li>
-<li>Chức vụ: bắt buộc.</li>
-<li>Ngày sinh: không bắt buộc.</li>
-<li>Loại giấy tờ: không bắt buộc.</li>
-<li>Số giấy tờ: không bắt buộc.</li>
-<li>Ngày cấp: không bắt buộc.</li>
-<li>Nơi cấp: không bắt buộc.</li>
+<li>Họ và tên: bắt buộc</li>
+<li>Chức vụ: bắt buộc</li>
+<li>Ngày sinh: không bắt buộc</li>
+<li>Loại giấy tờ: không bắt buộc</li>
+<li>Số giấy tờ: không bắt buộc</li>
+<li>Ngày cấp: không bắt buộc</li>
+<li>Nơi cấp: không bắt buộc</li>
 </ul>
 </li>
 <li><strong>Thông tin thanh toán:</strong><ul>
-<li>Ngân hàng: không bắt buộc.</li>
-<li>Số tài khoản: không bắt buộc.</li>
-<li>Chi nhánh: không bắt buộc.</li>
+<li>Ngân hàng: không bắt buộc</li>
+<li>Số tài khoản: không bắt buộc</li>
+<li>Chi nhánh: không bắt buộc</li>
 </ul>
 </li>
 <li><strong>Tệp đính kèm:</strong></li>
 </ul>
 <p><strong>Ghi chú:</strong> Những trường có chứa kí tự (*) là bắt buộc.</p>
 <ul>
-<li><strong>Bước 3</strong> : Click vòa nút <strong>Lưu</strong> để hoàn thành.</li>
+<li><strong>Bước 3</strong> : Click vào nút <strong>Lưu</strong> để hoàn thành.</li>
 <li><strong>Bước 4</strong> : Sau khi thêm mới khách hàng thành công, hệ thống sẽ thực hiện gửi tài khoản đăng nhập vào hệ thống cho khách hàng qua email.</li>
 </ul>
 <h4 id="them-moi-danh-sach-khach-hang"><strong>Thêm mới danh sách khách hàng</strong></h4>
@@ -279,7 +278,7 @@
 
 <ul>
 <li><strong>Quản lý mẫu:</strong> Cho phép nhân viên đơn vị thiết lập nhanh hợp đồng, không cần soạn thảo sẵn tại máy tính.</li>
-<li>Đơn vị có thể tùy chọn sử dụng Mãu hoặc không, hiện hệ thống có 8 mẫu cố định để đơn vị lưa chọn.</li>
+<li>Đơn vị có thể tùy chọn sử dụng Mẫu hoặc không, hiện hệ thống có 8 mẫu cố định để đơn vị lưa chọn.</li>
 <li>
 <p>Các bước thiết lập loại hợp đồng:</p>
 </li>
@@ -292,7 +291,7 @@
 <p><strong>Bước 3</strong>: Thêm hợp đồng.</p>
 </li>
 <li>
-<p>Nếu người dùng muốn sử dụng mẫu sẵn của hệ thống thì thực hiện click chọn "Tìm kiếm hợp đồng". Hệ thống sẽ view ra các hợp đồng và người thực hiện Tải mẫu về.</p>
+<p>Nếu người dùng muốn sử dụng mẫu sẵn của hệ thống thì thực hiện click chọn "Tìm kiếm hợp đồng". Hệ thống sẽ view ra các hợp đồng và người dùng thực hiện Tải mẫu về.</p>
 </li>
 </ul>
 <p><img alt="" src="../picture/kho-mau-hop-dong.png" />
@@ -318,7 +317,7 @@
 <h3 id="quy-trinh-ky-on-vi"><strong>Quy trình ký đơn vị</strong></h3>
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/vBRoYJHQpK4?si=Wgqf2GxuEEi5wbE6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-<p><strong>Quy trình ký:</strong> Là luồng quy trình mà đơn vị sẽ quy định áp dùng mặc định cho mọi loại hợp đồng nếu chọn quy trình này.</p>
+<p><strong>Quy trình ký:</strong> Là luồng quy trình mà đơn vị sẽ quy định áp dụng mặc định cho mọi loại hợp đồng nếu chọn quy trình này.</p>
 <p><strong>Các bước thực hiện:</strong></p>
 <ul>
 <li><strong>Bước 1</strong>: Truy cập Cấu hình chung &gt;&gt; Quy trình ký đơn vị &gt;&gt; Thêm mới quy trình.</li>
@@ -326,7 +325,7 @@
 <p><strong>Buóc 2</strong>: Điền các thông tin:</p>
 </li>
 <li>
-<p>Tab Thong tin quy trìnhL Điền thông tin quy trình, loại quy trình, mô tả (nếu có).</p>
+<p>Tab Thông tin quy trình: Điền thông tin quy trình, loại quy trình, mô tả (nếu có).</p>
 </li>
 <li>Tab Các bên ký kết hợp đồng: Người dùng thiết lập các bên tham gia ký theo thứ tự sắp xếp.</li>
 </ul>
@@ -343,11 +342,14 @@
 <li><strong>Bước 1</strong>: Truy cập hệ thống &gt;&gt; Cấu hình chung &gt;&gt; Danh mục chung.
   <img alt="" src="../picture/danh-muc-chung-b1.png" /></li>
 <li><strong>Bước 2</strong>: Thực hiện Thêm mới danh mục cần sử dụng cho mẫu như sau.
-  <img alt="" src="../picture/danh-muc-chung-b2.png" /> - Mã danh mục: Không được nhập có khoảng trắng, bắt buộc nhập. - Tên: Nhập nội dung tên, bắt buộc nhập. - Chọn giá trị tương ứng của danh mục cha (nếu có).</li>
+  <img alt="" src="../picture/danh-muc-chung-b2.png" /> 
+  <br>- Mã danh mục: Không được nhập có khoảng trắng, bắt buộc nhập.
+  <br>- Tên: Nhập nội dung tên, bắt buộc nhập.
+  <br>- Chọn giá trị tương ứng của danh mục cha (nếu có).</li>
 </ul>
 <p>Lưu ý: Trên thông tin danh mục có chọn danh mục cha thì dưới bảng có đủ dữ liệu excel sang, bạn có thể copy nhiều dòng mà không cần bấn nút "Thêm dòng".</p>
 <ul>
-<li>Với mẫu hợp đôgnf QRCODE trên, thì người dùng cần khai báo danh mục sau:</li>
+<li>Với mẫu hợp đồng QRCODE trên, thì người dùng cần khai báo danh mục sau:</li>
 <li><strong>Danh mục 1:</strong> Hình thức thanh toán, bao gồm hai Mã - Giá trị tương ứng là:<ul>
 <li>TM - Thanh toán tiền mặt.</li>
 <li>CK - Thanh toán chuyển khoản.</li>
@@ -379,22 +381,23 @@
 </li>
 </ul>
 <h3 id="quan-ly-phong-banchi-nhanh"><strong>Quản lý phòng ban/chi nhánh</strong></h3>
-<p>Quản lý các chi nhanh của đơn vị: tìm kiếm/thêm mới/sửa chi nhanh/thiết lập trạng thái hoạt động cho chi nhánh.
+<p>Quản lý các chi nhánh của đơn vị: tìm kiếm/thêm mới/sửa chi nhanh/thiết lập trạng thái hoạt động cho chi nhánh.
 Để truy cập chức năng: vào menu "Quản lý TT doanh nghiệp" &gt;&gt; "Quản lý phòng ban/chi nhánh".</p>
 <p><img alt="" src="../picture/quan-ly-phong-ban-chi-nhanh-1.png" /></p>
-<p><img alt="" src="../picture/quan-ly-phong-ban-chi-nhanh-2.png" /></p>
+<p><img alt="" src="../picture/quan-ly-phong-ban-chi-nhanh-2.png" />
+<br>Người dùng thực hiện điền các thông tin: Mã phòng ban, phân loại (chi nhánh hoặc phòng ban), tên phòng ban, mô tả (nếu có).</p>
 <h3 id="quan-ly-nguoi-dung"><strong>Quản lý người dùng</strong></h3>
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/hM4maNdyALY?si=Yuolo8ZJmceqYlhP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-<p>Mục để doanh nghiệp quản lý người dùng của đơn vị mình. Các chức năng gồm: tìm kiếm/thêm mới/sửa thông tin người dùng/phân quyền/thiết lập trạng thái hoạt động cho người dùng.</p>
-<p>Để truy cập chức năng: vào menu <strong>" Quản lý TT doanh nghiệp"</strong> &gt;&gt; <strong>"Người dùng"</strong>.</p>
+<p>Mục để doanh nghiệp quản lý người dùng của đơn vị mình. Các chức năng gồm: tìm kiếm/thêm mới/sửa thông tin người dùng/phân quyền/thiết lập trạng thái hoạt động cho người dùng.
+<br> Để truy cập chức năng: vào menu <strong>" Quản lý TT doanh nghiệp"</strong> &gt;&gt; <strong>"Người dùng"</strong>.</p>
 <p><img alt="" src="../picture/quan-ly-nguoi-dung-1.png" /></p>
 <p>Có 02 cách để thêm người dùng:</p>
 <ul>
 <li><strong>Cách 1:</strong> Thực hiện thêm mới từng cá nhân, khách hàng điền các thông tin: email, tên đăng nhập, họ và tên, loại người dùng, số điện thoại, phòng ban,...
   <img alt="" src="../picture/quan-ly-nguoi-dung-cach-1.png" /></li>
 <li><strong>Cách 2:</strong> Thực hiện import hàng loại người dùng bằng cách "Thêm từ file".
-  Tại (1) khahcs hàng tải file mẫu về và điền các thông tin trong file excel sau đó import lên (2).
+  Tại (1) khách hàng tải file mẫu về và điền các thông tin trong file excel sau đó import lên (2).
   <img alt="" src="../picture/quan-ly-nguoi-dung-cach-2.png" /></li>
 </ul>
 <h3 id="nhom-quyen"><strong>Nhóm quyền</strong></h3>
@@ -443,16 +446,15 @@
     
   </span>
 </div>
-    <script src="../../js/jquery-3.6.0.min.js"></script>
-    <script>var base_url = "../..";</script>
-    <script src="../../js/theme_extra.js"></script>
-    <script src="../../js/theme.js"></script>
-      <script src="../../js/extra.js"></script>
-      <script src="../../search/main.js"></script>
-    <script>
-        jQuery(function () {
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../js/extra.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
             SphinxRtdTheme.Navigation.enable(true);
-        });
+        };
     </script>
 
 </body>

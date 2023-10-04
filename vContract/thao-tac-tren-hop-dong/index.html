@@ -8,7 +8,7 @@
     <title>Thao tác trên hợp đồng - Hướng dẫn sử dụng hệ thống vContract</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
         <link href="../../css/extra.css" rel="stylesheet" />
     
       <script>
@@ -18,11 +18,12 @@
         var mkdocs_page_url = null;
       </script>
     
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
     <!--[if lt IE 9]>
       <script src="../../js/html5shiv.min.js"></script>
     <![endif]-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-      <script>hljs.highlightAll();</script> 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
 </head>
 
 <body class="wy-body-for-nav" role="document">
@@ -34,7 +35,7 @@
           <a href="../.." class="icon icon-home"> Hướng dẫn sử dụng hệ thống vContract
         </a><div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
   </form>
 </div>
       </div>
@@ -100,9 +101,9 @@
       <div class="wy-nav-content">
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
           <li>vContract - Hợp đồng điện tử &raquo;</li>
-      <li class="breadcrumb-item active">Thao tác trên hợp đồng</li>
+      <li>Thao tác trên hợp đồng</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -129,7 +130,7 @@
   <img alt="" src="../picture/lap-hop-dong-chon-tep-tu-may-b5.1.png" />
   <img alt="" src="../picture/lap-hop-dong-chon-tep-tu-may-b5.2.png" /></li>
 <li><strong>Bước 6</strong>: Thiết lập các bên ký kết.</li>
-<li>Chọn các bên tham gia ký kết: Để thêm 1 bên ký kết phải nhập đúng số giấy tờ/mã số thuế của bên tham gia ký kết &gt;&gt; Hệ thống hiển thị tên chủ thể chi người dùng chọn.</li>
+<li>Chọn các bên tham gia ký kết: Để thêm 1 bên ký kết phải nhập đúng số giấy tờ/mã số thuế của bên tham gia ký kết &gt;&gt; Hệ thống hiển thị tên chủ thể cho người dùng chọn.</li>
 <li>Thiết lập thứ tự ký: Nhập thứ tự ký cho từng chủ thể ở cột đầu tiên "TT ký", có thể thiết lập ký song song bằng cách đặt thứ tự ký của các chủ thể bằng nhau.</li>
 <li><strong>Bước 7</strong>: Thiết lập luồng phê duyệt-ký duyệt của nội bộ bên lập (nếu bên lập tham gia ký kết)</li>
 <li>Thêm người dùng vào luồng phê duyệt/ký duyệt bằng gõ tên/email của người dùng cần thêm &gt;&gt; Hệ thống hiển thị các người dùng phù hợp với nội dung nhập vào để người lập chọn.</li>
@@ -147,7 +148,7 @@
   <img alt="" src="../picture/lap-hop-dong-theo-lo-b2.png" /></li>
 <li><strong>Bước 3</strong>: Thiết lập thông tin và cấu hình cho lô.</li>
 <li>Tại Thông tin mẫu tạo lô (1): Người dùng thực hiện tải file excel mẫu mà hệ thống đã thiết lập sẵn, điền các thông tin yêu cầu. Và tải file excel đó lên hệ thống.</li>
-<li>Tại Cấu hình luồng ký theo lô (2): THực hiện chọn người phê duyệt, ký áp dụng xuyên suốt cho lô hợp đồng này.</li>
+<li>Tại Cấu hình luồng ký theo lô (2): Thực hiện chọn người phê duyệt, ký áp dụng xuyên suốt cho lô hợp đồng này.</li>
 <li>Tại Thiết lập cấu hình chân ký (3): Đã thiết lập theo mẫu hợp đồng chọn ban đầu.
     <img alt="" src="../picture/lap-hop-dong-theo-lo-b3.png" /></li>
 </ul>
@@ -164,20 +165,20 @@
   <img alt="" src="../picture/lap-hop-dong-chon-tu-mau-b3.png" /></li>
 </ul>
 <p><strong>Trong đó:</strong></p>
-<p><strong>(1)Nhập thông tin chung:</strong></p>
+<p><strong>(1) Nhập thông tin chung:</strong></p>
 <p>Bao gồm:</p>
 <ul>
 <li>Mẫu hợp đồng: Hiển thị tên mẫu hợp đồng đã chọn ở bước 1.</li>
-<li>Loại hợp đồng: Hiển thị laoị hợp đồng của mẫu đã chọn.</li>
+<li>Loại hợp đồng: Hiển thị loại hợp đồng của mẫu đã chọn.</li>
 <li>Tên hợp đồng/phụ lục: đây là tên của hợp đồng đang lập - bắt buộc nhập.</li>
 <li>Mã hợp đồng/phụ lục: đây là mã của hợp đồng đang lập - bắt buộc nhập, không được nhập trùng, không có khoảng trắng.</li>
 </ul>
-<p><strong>(2)Danh sách tệp đính kèm:</strong> Tải các tệp đính kèm - Chỉ chấp nhận tập tin PDF (<em>.pdf) và tập tin hình ảnh (</em>.jbg, <em>.png, </em>.bmp).</p>
-<p><strong>(3)Các bên ký hợp đồng:</strong> Thiết lập các bên thực hiện ký kết hợp đồng, có 1 bên lập và nhiều bên khách hàng. Phải có ít nhất 1 đối tượng ký hợp đồng.</p>
+<p><strong>(2) Danh sách tệp đính kèm:</strong> Tải các tệp đính kèm - Chỉ chấp nhận tập tin PDF (<em>.pdf) và tập tin hình ảnh (</em>.jpg, <em>.png, </em>.bmp).</p>
+<p><strong>(3) Các bên ký hợp đồng:</strong> Thiết lập các bên thực hiện ký kết hợp đồng, có 1 bên lập và nhiều bên khách hàng. Phải có ít nhất 1 đối tượng ký hợp đồng.</p>
 <ul>
 <li>Nhập đúng số giấy tờ/Mã số thuế của bên ký kết để hệ thống suggest thông tin.</li>
 </ul>
-<p><strong>(4)Thiết lập luồng duyệt - ký hợp đồng nội bộ:</strong> Yêu cầu thiết lập thành viên trong nội bộ thực hiện ký, sẽ có nhiều người duyệt nhưng chỉ có 1 người ký.</p>
+<p><strong>(4) Thiết lập luồng duyệt - ký hợp đồng nội bộ:</strong> Yêu cầu thiết lập thành viên trong nội bộ thực hiện ký, sẽ có nhiều người duyệt nhưng chỉ có 1 người ký.</p>
 <ul>
 <li>
 <p>Nhập đúng email để suggest thông tin thành viên.</p>
@@ -217,7 +218,7 @@
 <ul>
 <li><strong>Bước 1</strong>: Tại menu danh mục Hợp đồng của tôi <strong>-&gt;</strong> Chọn Hợp đồng tôi lập. Hệ thống hiển thị màn hình Hợp đồng tôi lập.
   <img alt="" src="../picture/chinh-sua-hop-dong-b1.png" /></li>
-<li><strong>Bước 2</strong>: Chọn hợp đồng và bấm nút "Chỉnh sửa". Tùy hợp đồng được chọn lập theo hình thức Chọn tệp từ máy hay CHọn từ mẫu hệ thống sẽ hiển thị ra màn hình tương ứng.</li>
+<li><strong>Bước 2</strong>: Chọn hợp đồng và bấm nút "Chỉnh sửa". Tùy hợp đồng được chọn lập theo hình thức Chọn tệp từ máy hay Chọn từ mẫu hệ thống sẽ hiển thị ra màn hình tương ứng.</li>
 <li>Nếu <strong>Chọn tệp từ máy -&gt;</strong> Chuyển màn hình bước 3.</li>
 <li>Nếu <strong>Chọn từ mẫu -&gt;</strong> Chuyển màn hình bước 1.</li>
 <li><strong>Bước 3</strong>: Các bước tiếp theo tương tự khi Lập hợp đồng.</li>
@@ -230,7 +231,7 @@
 <li><strong>Bước 1</strong>: Tại menu danh mục Hợp đồng của tôi <strong>-&gt;</strong> Chọn hợp đồng tôi lập. Hệ thống hiển thị màn hình Hợp đồng tôi lập.
   <img alt="" src="../picture/sao-chep-hop-dong-b1.png" /></li>
 <li>
-<p><strong>Buóc 2</strong>: Chọn hợp đồng và bấm nút "Sao chép". Tùy hợp đồng được chọn lập theo hình thức CHọn tệp từ máy hay chọn từ mẫu hệ thống sẽ hiển thị ra màn hình tương ứng.</p>
+<p><strong>Bước 2</strong>: Chọn hợp đồng và bấm nút "Sao chép". Tùy hợp đồng được chọn lập theo hình thức Chọn tệp từ máy hay chọn từ mẫu hệ thống sẽ hiển thị ra màn hình tương ứng.</p>
 </li>
 <li>
 <p>Nếu <strong>Chọn tệp từ máy -&gt;</strong> Chuyển màn hình bước 3 và có nút "Chọn tệp từ máy" để chọn file hợp đồng.
@@ -255,15 +256,15 @@
 <li>
 <p><strong>Trong đó:</strong></p>
 <ul>
-<li><strong>(1)Nhập thông tin chung:</strong></li>
+<li><strong>(1) Nhập thông tin chung:</strong></li>
 <li>Mẫu hợp đồng: Hiển thị tên mẫu hợp đồng đã chọn ở bước 1.</li>
 <li>Loại hợp đồng: Hiển thị laoị hợp đồng của mẫu đã chọn.</li>
 <li>Tên hợp đồng/phụ lục: đây là tên của hợp đồng đang lập - bắt buộc nhập.</li>
 <li>Mã hợp đồng/phụ lục: đây là mã của hợp đồng đang lập - bắt buộc nhập, không được nhập trùng, không có khoảng trắng.</li>
-<li><strong>(2)Danh sách tệp đính kèm:</strong> Tải các tệp đính kèm - Chỉ chấp nhận tập tin PDF (<em>.pdf) và tập tin hình ảnh (</em>.jbg, <em>.png, </em>.bmp).</li>
-<li><strong>(3)Các bên ký hợp đồng:</strong> THiết lập các bên thực hiện ký hợp đồng, có 1 bên lập và nhiều bên khách hàng. Phải có ít nhất 1 đối tượng ký hợp đồng.</li>
+<li><strong>(2) Danh sách tệp đính kèm:</strong> Tải các tệp đính kèm - Chỉ chấp nhận tập tin PDF (<em>.pdf) và tập tin hình ảnh (</em>.jbg, <em>.png, </em>.bmp).</li>
+<li><strong>(3) Các bên ký hợp đồng:</strong> THiết lập các bên thực hiện ký hợp đồng, có 1 bên lập và nhiều bên khách hàng. Phải có ít nhất 1 đối tượng ký hợp đồng.</li>
 <li>Nhập đúng thông tin email/số điện thoại/Tên khách hàng/số giấy tờ của bên ký kết để hệ thống suggest thông tin.</li>
-<li><strong>(4)Thiết lập luồng duyệt - ký hợp đồng nội bộ:</strong> Yêu cầu thiết lập thành viên trong nội bộ thực hiện ký, sẽ có nhiều người duyệt nhưng chỉ có 1 người ký.</li>
+<li><strong>(4) Thiết lập luồng duyệt - ký hợp đồng nội bộ:</strong> Yêu cầu thiết lập thành viên trong nội bộ thực hiện ký, sẽ có nhiều người duyệt nhưng chỉ có 1 người ký.</li>
 <li>Nhập đúng email để suggest thông tin thành viên.</li>
 </ul>
 </li>
@@ -406,21 +407,18 @@
 <ul>
 <li><strong>Bước 1:</strong> Thực hiện truy cập <strong>Quản lý hợp đồng</strong> &gt;&gt; <strong>Hợp đồng số hóa</strong>.
   <img alt="" src="../picture/hop-dong-so-hoa-b1.png" /></li>
-<li>
-<p><strong>Bước 2:</strong> Tạo <strong>"Thêm mới"</strong></p>
-</li>
-<li>
-<p>Người dùng điền đầy đủ các trường thồn tin sau: Loại hợp đồng, hợp đồng gốc (nếu có), tên hợp đồng, mã hợp đồng, ngày hiệu lực, ngày hết hiệu lực.</p>
-</li>
-<li>Người dùng có thể uplaod nhiều dile theo 1 bộ hợp đồng. Và thực hiện lập hợp đồng.</li>
+<li><strong>Bước 2:</strong> Tạo <strong>"Thêm mới"</strong></li>
+<li>Chọn tải file lên phần mềm: Hệ thống nhận các định dạng file doc/pdf/rar và dung lượng không quá 100MB</li>
+<li>Người dùng điền đầy đủ các trường thồn tin sau: Loại hợp đồng, hợp đồng gốc (nếu có), tên hợp đồng, mã hợp đồng, ngày hiệu lực, ngày hết hiệu lực.</li>
+<li>Người dùng có thể upload nhiều file theo 1 bộ hợp đồng. Và thực hiện lập hợp đồng.</li>
 </ul>
 <p><img alt="" src="../picture/hop-dong-so-hoa-b2.png" /></p>
 <ul>
-<li><strong>Bước 3:</strong> Sau khi upload hợp đồng giấy lên phần mềm thành cô, người dùng có thể thực hiện các thao tác: xem, sửa, tải,xóa. Và dễ dàng tìm kiếm hợp đồng theo các thông tin thiết lập ban đầu.
+<li><strong>Bước 3:</strong> Sau khi upload hợp đồng giấy lên phần mềm thành công, người dùng có thể thực hiện các thao tác: xem, sửa, tải, xóa. Và dễ dàng tìm kiếm hợp đồng theo các thông tin thiết lập ban đầu.
   <img alt="" src="../picture/hop-dong-so-hoa-b3.png" /></li>
 </ul>
 <h3 id="hop-ong-can-xac-nhan"><strong>Hợp đồng cần xác nhận</strong></h3>
-<p><strong>Mục đích:</strong> Sử dụng trong TH doanh nghiệp ký bằng CTS truóc, bên nhận hợp đồng ký bằng OTP sau và cần DN xác nhận ký lại một lần nữa để đảm bảo tính pháp lý cho hợp đồng.</p>
+<p><strong>Mục đích:</strong> Sử dụng trong TH doanh nghiệp ký bằng CTS trước, bên nhận hợp đồng ký bằng OTP sau và cần DN xác nhận ký lại một lần nữa để đảm bảo tính pháp lý cho hợp đồng.</p>
 <p><strong>Các bước thực hiện:</strong></p>
 <ul>
 <li><strong>Bước 1:</strong> Thực hiện truy cập <strong>Hợp đồng của tôi</strong> &gt;&gt; <strong>HĐ cần xác nhận</strong>.
@@ -432,7 +430,7 @@
     <img alt="" src="../picture/hop-dong-can-xac-nhan-b3.1.png" /></li>
 <li>Người dùng chọn CTS để thực hiện ký.
     <img alt="" src="../picture/hop-dong-can-xac-nhan-b3.2.png" /></li>
-<li>Sau khi doanh nghiệp ký xác nhận thành cô, hệ thống sẽ trả về kết quả Hợp đồng ở dạnh trạng thái Hoàn thành và có giá trị.
+<li>Sau khi doanh nghiệp ký xác nhận thành công, hệ thống sẽ trả về kết quả Hợp đồng ở trạng thái Hoàn thành và có giá trị.
     <img alt="" src="../picture/hop-dong-can-xac-nhan-b3.3.png" />
     <img alt="" src="../picture/hop-dong-can-xac-nhan-b3.4.png" /></li>
 </ul>
@@ -472,16 +470,15 @@
     
   </span>
 </div>
-    <script src="../../js/jquery-3.6.0.min.js"></script>
-    <script>var base_url = "../..";</script>
-    <script src="../../js/theme_extra.js"></script>
-    <script src="../../js/theme.js"></script>
-      <script src="../../js/extra.js"></script>
-      <script src="../../search/main.js"></script>
-    <script>
-        jQuery(function () {
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../js/extra.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
             SphinxRtdTheme.Navigation.enable(true);
-        });
+        };
     </script>
 
 </body>
