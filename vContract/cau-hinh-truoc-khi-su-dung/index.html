@@ -235,7 +235,7 @@
 <li><strong>Thông tin liên hệ:</strong><ul>
 <li>Tỉnh/Thành phố: bắt buộc</li>
 <li>Quận/Huyện: bắt buộc</li>
-<li>Phường/Xã: không bắt buộc</li>
+<li>Phường/Xã:  Bắt buộc</li>
 <li>Địa chỉ: bắt buộc</li>
 <li>Email: bắt buộc</li>
 <li>Điện thoại: bắt buộc</li>
@@ -246,6 +246,7 @@
 <li>Họ và tên: bắt buộc</li>
 <li>Chức vụ: bắt buộc</li>
 <li>Ngày sinh: không bắt buộc</li>
+<li>Giới tính: không bắt buộc</li>
 <li>Loại giấy tờ: không bắt buộc</li>
 <li>Số giấy tờ: không bắt buộc</li>
 <li>Ngày cấp: không bắt buộc</li>
@@ -278,7 +279,7 @@
 
 <ul>
 <li><strong>Quản lý mẫu:</strong> Cho phép nhân viên đơn vị thiết lập nhanh hợp đồng, không cần soạn thảo sẵn tại máy tính.</li>
-<li>Đơn vị có thể tùy chọn sử dụng Mẫu hoặc không, hiện hệ thống có 8 mẫu cố định để đơn vị lưa chọn.</li>
+<li>Đơn vị có thể tùy chọn sử dụng Mẫu hoặc không, hiện hệ thống có 8 mẫu cố định để đơn vị lựa chọn.</li>
 <li>
 <p>Các bước thiết lập loại hợp đồng:</p>
 </li>
@@ -307,7 +308,7 @@
 <li>
 <p>(3) Tab Cấu hình thông tin trong mẫu:</p>
 <ul>
-<li>Cấu hình nội dung: Sau khi thực hiện (2) thành công thì hệ thống sẽ show ra các trường merge filed để Khách hàng kiểm tra lại thông tin và có thể thực hiện thêm mới.</li>
+<li>Cấu hình nội dung: Sau khi thực hiện (2) thành công thì hệ thống sẽ show ra các trường merge field để Khách hàng kiểm tra lại thông tin và có thể thực hiện thêm mới.</li>
 <li>Cấu hình: Trang ký.</li>
 <li>Cấu hình luồng ký của đơn vị: Setup luồng ký áp dụng cho mẫu này.</li>
 </ul>
@@ -333,7 +334,7 @@
 <p><img alt="" src="../picture/quy-trinh-ky-don-vi-b2.1.png" /></p>
 <p><img alt="" src="../picture/quy-trinh-ky-don-vi-b2.2.png" /></p>
 <ul>
-<li><strong>Bước 3</strong>: Sau khi hoàn thiệu quy trình ký, người dùng thực hiện click "Cập nhật quy trình" để hoàn tất.</li>
+<li><strong>Bước 3</strong>: Sau khi hoàn thiện quy trình ký, người dùng thực hiện click "Cập nhật quy trình" để hoàn tất.</li>
 </ul>
 <h3 id="danh-muc-chung"><strong>Danh mục chung</strong></h3>
 <p><strong>Danh mục chung:</strong> Đây là các bộ danh mục động để từng công ty có thể cấu hình theo nhu cầu riêng. Danh mục có thể được thiết lập mối quan hệ cha con, một danh mục con chỉ thuộc 1 danh mục cha, 1 danh mục cha có thể có nhiều con.</p>
@@ -347,7 +348,8 @@
   <br>- Tên: Nhập nội dung tên, bắt buộc nhập.
   <br>- Chọn giá trị tương ứng của danh mục cha (nếu có).</li>
 </ul>
-<p>Lưu ý: Trên thông tin danh mục có chọn danh mục cha thì dưới bảng có đủ dữ liệu excel sang, bạn có thể copy nhiều dòng mà không cần bấn nút "Thêm dòng".</p>
+<p>Lưu ý: Trên thông tin danh mục có chọn danh mục cha thì dưới bảng có đủ dữ liệu để chọn giá trị tương ứng.
+  <br>- Các ô Mã và giá trị có thể thực hiện copy/paste từ excel sang, bạn có thể copy nhiều dòng mà không cần bấm nút "Thêm dòng".</p>
 <ul>
 <li>Với mẫu hợp đồng QRCODE trên, thì người dùng cần khai báo danh mục sau:</li>
 <li><strong>Danh mục 1:</strong> Hình thức thanh toán, bao gồm hai Mã - Giá trị tương ứng là:<ul>
@@ -376,7 +378,7 @@
 <li><strong>Danh mục 6:</strong> Đơn giá dịch vụ QR Code:<ul>
 <li>Mục đích: Khai báo giá của dịch vụ tạo QR code.</li>
 <li>Danh mục Đơn giá gói dịch vụ sẽ có danh mục cha là Danh mục gói QR Code.</li>
-<li>Người dùng sẽ khai báo tương ứng các Giá trị = Giá của gói QR và có Giá trị tương ứng của danh mục cha = Tên sản phẩm.</li>
+<li>Người dùng sẽ khai báo tương ứng các Giá trị = Giá của gói QR code và có Giá trị tương ứng của danh mục cha = Tên sản phẩm.</li>
 </ul>
 </li>
 </ul>
@@ -396,7 +398,7 @@
 <ul>
 <li><strong>Cách 1:</strong> Thực hiện thêm mới từng cá nhân, khách hàng điền các thông tin: email, tên đăng nhập, họ và tên, loại người dùng, số điện thoại, phòng ban,...
   <img alt="" src="../picture/quan-ly-nguoi-dung-cach-1.png" /></li>
-<li><strong>Cách 2:</strong> Thực hiện import hàng loại người dùng bằng cách "Thêm từ file".
+<li><strong>Cách 2:</strong> Thực hiện import hàng loạt người dùng bằng cách "Thêm từ file".
   Tại (1) khách hàng tải file mẫu về và điền các thông tin trong file excel sau đó import lên (2).
   <img alt="" src="../picture/quan-ly-nguoi-dung-cach-2.png" /></li>
 </ul>
@@ -404,7 +406,7 @@
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/BZr3KDwXUPw?si=09pDmSFEM2_URAhs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <p>Mục để doanh nghiệp quản lý các nhóm người dùng có chung các quyền thao tác trên website dịch vụ. Các chức năng gồm: tìm kiếm/thêm mới/sửa thông tin nhóm/phân quyền/ thiết lập trạng thái hoạt động cho nhóm người dùng.</p>
-<p>Để truy cập chức năng: vòa menu "Quản lý TT doanh nghiệp" &gt;&gt; "Nhóm quyền".</p>
+<p>Để truy cập chức năng: vào menu "Quản lý TT doanh nghiệp" &gt;&gt; "Nhóm quyền".</p>
 <ul>
 <li>Tại Tab Phân quyền theo chức quyền: Thực hiện chọn quyền truy cập, sử dụng chức năng của phần mềm.</li>
 <li>Tại Tab Phân quyền theo dữ liệu: thực hiện bật chế độ quản lý hợp đồng để lựa chọn các thông tin.</li>
